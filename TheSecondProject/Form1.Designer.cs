@@ -167,6 +167,7 @@
             this.btnViewReport.TabIndex = 10;
             this.btnViewReport.Text = "View Report";
             this.btnViewReport.UseVisualStyleBackColor = true;
+            this.btnViewReport.Click += new System.EventHandler(this.btnViewReport_Click);
             // 
             // lblWeatherReports
             // 
