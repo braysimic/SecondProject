@@ -22,18 +22,18 @@ namespace TheSecondProject
         public struct WeatherRecord
         {
             public string Location;
-            public string Temperature;
-            public string Humidity;
+            public double Temperature;
+            public double Humidity;
             public string Condition;
         }
 
         private void btnAddWeather_Click(object sender, EventArgs e)
         {
-            string location = lblLocation.Text;
+            string location = txtLocation.Text;
             double temperature = double.TryParse(txtTemperature.Text, out temperature) ? temperature : 0;
             double humidity = double.TryParse(txtHumidity.Text, out humidity) ? humidity : 0;
             string condition = GetSelectedCondition();
-            if (string.IsNullOrEmpty) || temperature == 0 || humidity == 0 || string.IsNullOrEmpty(condition))
+            if (string.IsNullOrEmpty(location) || temperature == 0 || humidity == 0 || string.IsNullOrEmpty(condition))
                     {
                 MessageBox.Show("Please enter valid data for all boxes");
                 return;
@@ -66,7 +66,7 @@ namespace TheSecondProject
                 return "Sunny";
             else if (radRainy.Checked)
                 return "Rainy";
-            else if (radWindy.Checked) ;
+            else if (radWindy.Checked)
             return "Windy";
             return string.Empty;
         }
@@ -83,7 +83,7 @@ namespace TheSecondProject
 
             if (lstWeatherReports.Items.Count == 0)
             {
-                lstWeatherReports.Items.Add("No Weather data available, try pressing Add Weather :)")
+                lstWeatherReports.Items.Add("No Weather data available, try pressing Add Weather :)");
             }
         }
     }

@@ -77,22 +77,22 @@
             // 
             this.txtLocation.Location = new System.Drawing.Point(301, 66);
             this.txtLocation.Name = "txtLocation";
-            this.txtLocation.Size = new System.Drawing.Size(100, 26);
-            this.txtLocation.TabIndex = 4;
+            this.txtLocation.Size = new System.Drawing.Size(146, 26);
+            this.txtLocation.TabIndex = 1;
             // 
             // txtTemperature
             // 
             this.txtTemperature.Location = new System.Drawing.Point(301, 109);
             this.txtTemperature.Name = "txtTemperature";
-            this.txtTemperature.Size = new System.Drawing.Size(100, 26);
-            this.txtTemperature.TabIndex = 5;
+            this.txtTemperature.Size = new System.Drawing.Size(41, 26);
+            this.txtTemperature.TabIndex = 2;
             // 
             // txtHumidity
             // 
             this.txtHumidity.Location = new System.Drawing.Point(301, 154);
             this.txtHumidity.Name = "txtHumidity";
-            this.txtHumidity.Size = new System.Drawing.Size(100, 26);
-            this.txtHumidity.TabIndex = 6;
+            this.txtHumidity.Size = new System.Drawing.Size(41, 26);
+            this.txtHumidity.TabIndex = 3;
             // 
             // grpWeatherCondition
             // 
@@ -102,7 +102,7 @@
             this.grpWeatherCondition.Location = new System.Drawing.Point(210, 211);
             this.grpWeatherCondition.Name = "grpWeatherCondition";
             this.grpWeatherCondition.Size = new System.Drawing.Size(200, 172);
-            this.grpWeatherCondition.TabIndex = 7;
+            this.grpWeatherCondition.TabIndex = 4;
             this.grpWeatherCondition.TabStop = false;
             this.grpWeatherCondition.Text = "Weather Condition";
             // 
@@ -153,8 +153,8 @@
             // 
             this.btnAddWeather.Location = new System.Drawing.Point(147, 417);
             this.btnAddWeather.Name = "btnAddWeather";
-            this.btnAddWeather.Size = new System.Drawing.Size(124, 27);
-            this.btnAddWeather.TabIndex = 9;
+            this.btnAddWeather.Size = new System.Drawing.Size(124, 36);
+            this.btnAddWeather.TabIndex = 5;
             this.btnAddWeather.Text = "Add Weather";
             this.btnAddWeather.UseVisualStyleBackColor = true;
             this.btnAddWeather.Click += new System.EventHandler(this.btnAddWeather_Click);
@@ -163,8 +163,8 @@
             // 
             this.btnViewReport.Location = new System.Drawing.Point(322, 417);
             this.btnViewReport.Name = "btnViewReport";
-            this.btnViewReport.Size = new System.Drawing.Size(125, 27);
-            this.btnViewReport.TabIndex = 10;
+            this.btnViewReport.Size = new System.Drawing.Size(125, 36);
+            this.btnViewReport.TabIndex = 6;
             this.btnViewReport.Text = "View Report";
             this.btnViewReport.UseVisualStyleBackColor = true;
             this.btnViewReport.Click += new System.EventHandler(this.btnViewReport_Click);
@@ -182,9 +182,9 @@
             // 
             this.lstWeatherReports.FormattingEnabled = true;
             this.lstWeatherReports.ItemHeight = 20;
-            this.lstWeatherReports.Location = new System.Drawing.Point(226, 507);
+            this.lstWeatherReports.Location = new System.Drawing.Point(12, 506);
             this.lstWeatherReports.Name = "lstWeatherReports";
-            this.lstWeatherReports.Size = new System.Drawing.Size(169, 124);
+            this.lstWeatherReports.Size = new System.Drawing.Size(579, 164);
             this.lstWeatherReports.TabIndex = 12;
             // 
             // Form1
@@ -205,7 +205,7 @@
             this.Controls.Add(this.lblTemperature);
             this.Controls.Add(this.lblLocation);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Weather Track App";
             this.grpWeatherCondition.ResumeLayout(false);
             this.grpWeatherCondition.PerformLayout();
             this.ResumeLayout(false);
